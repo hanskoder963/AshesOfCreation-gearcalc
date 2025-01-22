@@ -7,8 +7,8 @@ const gearData = [
   {
     name: "Rividium Helm",
     type: "helmet",
-    rarity: "Common",
     icon: "gear/helmet/rividium-helm-icon.webp",
+    rarity: "Common",
     stats: {
       armor: { min: 53, max: 56 },
       magicResist: 14,
