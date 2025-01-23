@@ -99,42 +99,42 @@ document.querySelectorAll(".slot").forEach((slot) => {
   });
 });
 
-// helmetSlot.addEventListener('click', () => {
-//   console.log('Helmet slot clicked');
-//   chosenGearList.innerHTML = ''; // clear previous content
+helmetSlot.addEventListener("click", () => {
+  console.log("Helmet slot clicked");
+  chosenGearList.innerHTML = ""; // clear previous content
 
-//   const commonGear = gearData[0];
-//   const gearListBox = document.createElement('a');
+  const commonGear = gearData[0];
+  const gearListBox = document.createElement("a");
 
-//   gearListBox.classList.add('gear-box');
-//   gearListBox.style.cursor = 'pointer';
+  gearListBox.classList.add("gear-box");
+  gearListBox.style.cursor = "pointer";
 
-//   const gearIcon = document.createElement('img');
-//   gearIcon.src = commonGear.icon;
-//   gearIcon.alt = commonGear.name;
-//   gearIcon.style.width = '50px';
-//   gearIcon.style.height = '50px';
+  const gearIcon = document.createElement("img");
+  gearIcon.src = commonGear.icon;
+  gearIcon.alt = commonGear.name;
+  gearIcon.style.width = "50px";
+  gearIcon.style.height = "50px";
 
-//   const gearName = document.createElement('div');
-//   gearName.textContent = `${commonGear.name}`;
+  const gearName = document.createElement("div");
+  gearName.textContent = `${commonGear.name}`;
 
-//   const gearStats = document.createElement('div');
-//   gearStats.innerHTML = `
-//     <p>Armor: ${commonGear.stats.armor.min} - ${commonGear.stats.armor.max}</p>
-//     <p>Magic Resist: ${commonGear.stats.magicResist}</p>
-//     <p>Constitution: ${commonGear.stats.constitution}</p>
-//   `; // endre rettning på gear text setup
+  const gearStats = document.createElement("div");
+  gearStats.innerHTML = `
+    <p>Armor: ${commonGear.stats.armor.min} - ${commonGear.stats.armor.max}</p>
+    <p>Magic Resist: ${commonGear.stats.magicResist}</p>
+    <p>Constitution: ${commonGear.stats.constitution}</p>
+  `; // endre rettning på gear text setup
 
-//   gearListBox.appendChild(gearIcon);
-//   gearListBox.appendChild(gearName);
-//   gearListBox.appendChild(gearStats);
+  gearListBox.appendChild(gearIcon);
+  gearListBox.appendChild(gearName);
+  gearListBox.appendChild(gearStats);
 
-//   gearListBox.addEventListener('click', () => {
-//     showRaritySelection(gearData);
-//   });
+  gearListBox.addEventListener("click", () => {
+    showRaritySelection(gearData);
+  });
 
-//   chosenGearList.appendChild(gearListBox);
-// });
+  chosenGearList.appendChild(gearListBox);
+});
 
 function showRaritySelection(gearData) {
   const overlay = document.createElement("div");
