@@ -99,6 +99,13 @@ document.querySelectorAll(".slot").forEach((slot) => {
   });
 });
 
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    const overlay = document.querySelector(".overlay");
+    if (overlay) document.body.removeChild(overlay);
+  }
+});
+
 helmetSlot.addEventListener("click", () => {
   console.log("Helmet slot clicked");
   chosenGearList.innerHTML = ""; // clear previous content
